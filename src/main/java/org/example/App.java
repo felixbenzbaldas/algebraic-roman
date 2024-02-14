@@ -17,14 +17,7 @@ public class App {
     }
 
     // assignment of algebraic and roman numeral
-    private static class AR {
-        public AR(int algebraic, String roman) {
-            this.algebraic = algebraic;
-            this.roman = roman;
-        }
-        int algebraic;
-        String roman;
-    }
+    private record AR (int algebraic, String roman) {};
 
     private static List<AR> getConversionsList() {
         return List.of(
